@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<!-- 마크업용 주석 :: ctrl + /  -->
+<!-- <!DOCTYPE (Document Type 문서형식)> : 현재 문서 형식 지정 -->
+
+<html lang="en">
+<!-- html Tag :  html  문서의 내용을 정의하는 태그 ( 이 안에서 HTML 코드를 작성해야 함! ) -->
+
+    <head>
+    <!-- had Tag : html 문서를 정의하는 태그 
+                => 문서의 제목, 스타일시트(CSS) , 스크립트(JS) , 메타데이터(문서의 일반적 정보) -->
+        <meta charset="UTF-8">  <!-- 인코딩 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- 보고있는 기기의 가로, 세로 :: viewport -->
+        <title>01_글자관련태그</title> <!-- 웹 페이지의 Tab Name을 변경할 수 있음.-->
+    </head>
+    <body>
+        <!-- body Tag : 화면에 보여질 html 문서의 내용을 정의하는 태그 -->
+        
+        <!-- ① <h1> ~ <h6> 
+             '제목'을 입력할 때 사용하는 태그    
+             1 ~ 6까지 6단계 폰트크기가 지정되어 있음.
+
+             * 해당 태그는 시작부터 종료까지가 하나의 문단이 됨.
+               == 종료 태그 이후 줄바꿈이 일어남.
+        -->
+        기본 글자크기 입니다.
+        <h1> h1 Tag의 글자크기 입니다.</h1>
+        <h2> h2 Tag의 글자크기 입니다.</h2>
+        <h3> h3 Tag의 글자크기 입니다.</h3>
+        <h4> h4 Tag의 글자크기 입니다.</h4>
+        <h5> h5 Tag의 글자크기 입니다.</h5>
+        <h6> h6 Tag의 글자크기 입니다.</h6>
+
+        <!-- SEO (Search Engine Optimization): 검색 엔진 최적화  -->
+        <!-- 중요한 글씨를 인식함. ex) p Tag로 진행 시, 검색 엔진에서 추출되지 못함-->
+
+        <!-- ★ 쌍을 이루지 않는 Tag ★ -->
+        <br />  
+        <br>  <!-- 개행-->
+        <hr />  
+        <hr> <!-- hr 태그 : 가로 줄 긋기 태그-->
+
+        &nbsp; <!-- 띄어쓰기 -->
+
+        <h3>★ html 문서에서 연속으로 띄어쓰기 시 문제점 ★  </h3>
+        가              나          
+        다  ==> 띄어쓰기 및 엔터 적용 안됨.
+
+        <h3>● 띄어쓰기, 엔터를 화면에 표시하는 방법</h3>
+        가 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;나 
+        <br>다
+
+        <hr>
+
+        <!-- ① p Tag : 글을 작성하는 용도의 Tag
+                      종료 시, 줄바꿈 
+        -->
+        <p>p1번입니다.</p>
+        <p>p2번입니다.</p>
+        <p>p3번입니다.</p>
+        <p>p4번입니다.</p>
+     
+        
+        <!-- ② pre Tag : 글을 작성하는 용도의 Tag
+                      시작, 종료 태그 사이에 작성된 문자열의 형식을 그대로 출력함 
+                      잘 안씀..
+        --> 
+        <pre>가             나 
+             다
+        </pre>
+
+        <pre>pre1번     입니다.</pre>
+        <pr>pr1번     입니다.</pr>
+        <hr>
+
+        <h1>글자 관련 기타 Tag</h1>
+
+        <b>① b Tag </b> : 단순히 글자를 굵게 표시하는 태그 <br>
+        <strong>② strong Tag</strong> : 글자를 강조하는 태그 (웹접근성)  ::  음성으로 인식할 때, 강조해서 말해주는 역할 <br>
+
+        <!-- 웹 접근성 
+            일반인 뿐만 아니라, 장애인, 고령자들을 위해 
+            웹사이트에서 제공하는 서비스를 모두 이용할 수 있도록 보장하는 것
+            (!의무사항!)
+            웹 접근성을 위해서 사용되는 기술 : 스크린 리더
+        -->
+
+        <i> ③ i Tag</i> : 단순히 글자를 기울이는 Tag<br>
+
+        <em>④ em Tag</em> : 글자를 강조하는 Tag / 기울이는 Tag(웹접근성) <br>
+
+        <mark>⑤ mark Tag</mark> : 형광펜 효과를 나타내는 Tag <br>
+
+        <u>⑥ u Tag</u> : 밑줄을 긋는 Tag <br>
+
+        <s> ⑦ s Tag</s> : 취소선을 긋는 Tag <br>
+
+        <del>⑦  del Tag </del> : 취소선을 긋는 Tag2 <br>
+
+        <small>⑧ small Tag</small> : 글자를 작게 <br>
+
+        ⑨ sup Tag (윗첨자) : x <sup>2</sup> <br>
+        ⑩ sub Tag (아랫첨자) : log<sub>10</sub> <br>
+
+        ⑪ abbr Tag : 마우스 오버 시 툴팁 출력 Tag &nbsp;&nbsp;&nbsp;  
+        <abbr title = "Hyper Text Transfer Protocol"> HTTP</abbr>
+                    <!--   속성  마우스를 올려놓으면 속성이 출력됨.-->
+
+
+        <h3> 글자 관련 Tag 응용</h3>
+
+        <p>
+            <mark style="background-color: brown; color: white;" >Tag</mark>들은 해당 Tag 내에서 중첩으로 사용 가능하다. <br>
+            <strong>굵은</strong> 글자를 사용 할 수도 있고,
+            <em>기울</em>이거나,  
+            <del>취소선</del>을 넣는 등 <br>
+            <mark></mark>다양하게 사용할 수 있다.
+            
+        </p>
+
+
+
+
+
+
+
+
+        
+    </body>
+</html>

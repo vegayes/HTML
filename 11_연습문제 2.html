@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>11_연습문제 2</title>
+    </head>
+    <body>
+
+        <form action = "">
+
+            <fieldset>
+                <legend>납품자 정보</legend>
+                <ol>
+                    <li>납품자명 : <input name = info > <br><br></li>
+
+                    <li>email : <input type="email" name = info placeholder="answer@naver.com"> <br><br></li>
+
+                    <li>홈페이지 : <input type="url" name = info value ="http://"> <br><br></li>
+
+                    <li>지역 : 
+                        <select>
+                            <option selected name = region value = "부산">
+                                부산
+                            </option>
+
+                            <option name = region  value = "서울"></option>
+                                서울
+                            </option>
+
+                            <option  name = region value ="경기">
+                                경기
+                            </option>
+
+                            <option name = region value ="제주">
+                                제주
+                            </option>
+
+                            <option name = region value ="강원">
+                                강원
+                            </option>
+                        </select>
+                     </li>
+                </ol>
+            </fieldset>
+
+            <fieldset>
+                <legend>납품 정보</legend>
+                <ul>
+                    <li> 상품명 : <input name = outInfo> <br><br> </li>
+                    <li> 납품 수량 :  <input type = "number" min = 100 placeholder="최소 100" name = outputCount> <br><br></li>
+                    <li> 납품 등급 : <input type ="range"  min = 0  max = 100 step =10 name = grade> <br><br></li>
+                    <li> 기타사항 : 
+                        <textarea name = "etc" rows="3"> 
+                        </textarea><br><br>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <br><br>
+
+            <button type="submit"> send message</button>
+            <!-- button의 기본type = submit라서 생략 가능 -->
+
+        </form>
+    </body>
+</html>

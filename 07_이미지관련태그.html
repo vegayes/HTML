@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>07_이미지관련태그</title>
+    </head>
+    <body>
+        <h1>img Tag  </h1>
+        <pre>
+            - 웹 문서에 사진, 그림 같은 이미지를 삽입하는 용도의 Tag
+            
+            [속성]
+            1) src : 삽입할 이미지의 경로를 지정하는 속성(파일경로(상대경로),웹주소==이미지 주소 복사(절대경로))
+            2) width / height : 이미지의 크기를 지정하는 속성 // 지정안하면 원본크기임. 
+            3) alt : 이미지를 설명하는 속성 -> 이미지가 출력되지 않는 경우 화면에 직접 표시
+                    (웹접근성) 
+        </pre>
+
+        <hr>
+
+        <h3>src 속성 확인</h3>
+        <!-- 
+            상대경로 : 현재 위치를 기준으로 경로 지정 
+            .. : 상위 폴더
+            / : 하위 폴더 (아래, 안쪽, 안에)
+            ./ : 동일 레벨
+        -->
+
+        <!-- imag는 혼자 사용 가능! / 확장자 꼭 붙이기!-->
+        <!-- 컴퓨터 내 상대 경로-->
+        <img src = "./images/panda/래서판다1.jpg" >
+
+
+        <!-- 웹 이미지 경로(웹상 절대 경로)를 이용해서 이미지 출력-->
+        <img src = "https://images.unsplash.com/photo-1507838153414-b4b713384a76?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80">
+
+        <hr><hr>
+
+        <h2>width, height 속성을 이용한 크기 조절(고정/가변 크기)</h2>
+
+        <h4>① 고정 크기 단위(px) : 화면의 크기와 상관없이 지정된 값의 크기를 갖는 단위</h4>
+
+        <!--상대 경로 
+            2개 다 고정시키면 찌그러짐.-->
+        <img src = "./images/panda/푸바오1.jpg" width="300px" height="300px" >
+        <img src = "./images/panda/푸바오2.png" width="300px" height="300px" >
+        <img src = "./images/panda/푸바오3.jpg" width="300px" height="300px" >
+        <img src = "./images/panda/래서판다1.jpg" width="300px" height="300px" >
+        <img src = "./images/panda/래서판다2.jpg" width="300px" height="300px" >
+
+        <hr>
+
+        <!--절대 경로-->
+
+        <h4>② 가변 크기 단위(%) : 화면이나 영역 기준 사이트 크기에 따라 이미지 크기가 변경되는 단위
+               ==> 반응형!! (거의 필수)
+                ex) 브라우저 크기의 퍼센트로 
+        </h4>
+
+        <img src = "./images/picture/풍경1.jpg" ><br>
+        <img src = "./images/picture/풍경1.jpg" width="15%">
+        <img src = "./images/picture/풍경2.jpg" width="15%">
+        <img src = "./images/picture/풍경3.jpg" width="15%">
+        <img src = "./images/picture/풍경4.jpg" width="15%">
+
+
+        <hr>
+
+        <h2>alt 속성 확인</h2>
+        <p> 이름이나 경로를 틀린경우에 사진을 파악할 수 없어서 alt속성으로 이동됨 즉, alt에 설정한 글자가 출력됨.</p>
+        
+        <img  src = "./images/panda/푸바오4.jpg" alt="눈 푸바오">
+
+
+    </body>
+</html>
+
+
+
+

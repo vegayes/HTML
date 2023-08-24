@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>12_연습문제3</title>
+    </head>
+    <body>
+        
+        <form action = "">
+            <h1>회원 가입</h1>
+            <fieldset>
+
+                <legend>필수 입력 사항</legend>
+
+                <table>
+
+                    <tr>
+                        <th width="120px">ID</th>
+                        <td> <input maxlength = 9  size = 20 placeholder="아이디 10글자 이내" name ="Id"></td> 
+                        <td><button type="button">중복 확인</button></td>
+                    </tr>
+
+                    <tr>
+                        <th width="120px">비밀번호</th>
+                        <td colspan = "2">  <input type ="password" min =8  size = 35 placeholder="영문, 숫자, 특수문자 포함 8자 이상" name = "pw"> 
+                    </tr>
+                    <tr>
+                        <th width="120px">비밀번호 확인</th>
+                        <td colspan = "2">  <input type ="password" size = 35  name = "checkPw"> 
+                    </tr>
+
+                    <tr>
+                        <th width="120px">Email</th>
+                        <td>  <input type = "email"  name = "email"> </td>
+                        <td><select>
+                            <option selected>
+                                직접 입력
+                            </option>
+        
+                            <option value = "naver">
+                                naver.com
+                            </option>
+                            
+                            <option value = "gmail">
+                                gmail.com
+                            </option>
+        
+                            <option value = "daum">
+                                daum.com
+                            </option>
+                        </select></td>
+                    </tr>
+
+                </table>
+            </fieldset>
+
+
+
+            <fieldset>
+                <legend> 추가 정보</legend>
+
+                프로필 사진 <input type="file">
+
+                 <br><br>
+
+                 성별 :
+                 <label>
+                    여자 
+                 <input type ="radio" name = gender value = "F" checked> 
+                 </label>
+
+                 <label>
+                    남자 
+                 <input type ="radio" name = gender value = "M" > 
+                 </label>
+
+                 <br><br>
+
+                생년월일 : <input type = "date"  name = dateIn>
+
+                <br><br>
+                취미 <br>
+                <label>
+                 <input type ="checkbox" name = hobby value = "1" >
+                 야구 
+                 </label>
+
+                 &nbsp;
+                <label>
+                 <input type ="checkbox" name = hobby value = "2" >
+                 농구 
+                 </label>
+
+                 &nbsp;
+                 
+                <label>
+                 <input type ="checkbox" name = hobby value = "3" >
+                 축구 
+                 </label>
+                 
+                 <br>
+                <label>
+                 <input type ="checkbox" name = hobby value = "4"  checked>
+                 공부 
+                 </label>
+
+                 &nbsp;
+                 <label>
+                    <input type ="checkbox" name = hobby value = "5" >
+                    음악감상
+                </label>
+                <br>
+                <label>
+                    <input type ="checkbox" name = hobby value = "6" >
+                    기타
+                    <input type size = 20 >
+                </label>
+
+                <br><br>
+                자기소개
+
+                <br>
+                <textarea cols="60" rows = 8 style="resize : None;"></textarea>
+            
+            </fieldset>
+
+
+            <button>회원가입</button>
+            <button type = "reset">다시입력</button>
+            <button type = "button">이전으로</button>
+
+        </form>
+    </body>
+</html>
